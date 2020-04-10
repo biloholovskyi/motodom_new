@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MOTODOM</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <a class="logo-link" href="#">
+        <img class="logo" src="./media/icon/new-logo.svg" alt="logo">
+      </a>
+      <ul id="nav" class="out">
+        <li>
+          <a class="click"  href="#" onclick="openMenu();" ><img src="./media/icon/icon-motocylce.svg" alt="icon motocylce" width="22" height="13">Каталог</a>
+        </li>
+        <li>
+          <a href="#" ><img src="./media/icon/icon-offer.svg" alt="motodom" width="22" height="13">
+            Акции</a> 
+        </li>
+        <li>
+          <a href="#"><img src="./media/icon/icon-hat.svg" alt="motodom" width="22" height="13">Аксесуары</a>
+        </li>
+        <li>
+          <div class="burger-wrap">
+            <img src="./media/icon/icon-burger.svg" alt="motodom" width="22" height="13">
+            <input type="checkbox" id="check-menu" >
+            <label class="a" for="check-menu">Еще</label>
+            <div class="main-menu">
+              <ul class="submenu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Школа</a></li>
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+        </div>
+        </li>
+        <div class="line"></div>
+      </ul>
+      
+    </nav>
+    <div id="nav-trigger" class="nav-trigger open">
+      <span class="line-burger"></span>
+      <span class="line-burger"></span>
+      <span class="line-burger"></span>
+    </div>
+    <div class="header-contacts">
+      <div class="phone">
+        <h4>Телефон</h4>
+        <a href="#" class="text">+7 (843) 276-66-76</a>
+      </div>
+      <div class="header-btn">
+        <button>Связаться с нами</button>
+      </div>
+    </div>
+
+</header>
+  <section class="home">
+  <!-- <div class="home"> -->
+    <div class="slider">
+      <div class="slider__nav">
+        <div class="prev"></div>
+        <div class="slider__count">
+          <div class="cur">01</div>
+          /
+          <div class="all">08</div>
+        </div>
+        <div class="next"></div>
+      </div>
+      <div class="item item--active">
+        <img src="./media/image/bg-shape.png" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>Новый KAWASAKI ninja zx-6r</h1></div>
+          <div class="desc"><p>Гроза поворотов и километров.</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./media/image/bg-shape.png" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>ninja zx-8r</h1></div>
+          <div class="desc"><p>Тест тест тест</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+      <div class="item" >
+        <img src="" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>Lorem Lorem</h1></div>
+          <div class="desc"><p>Тест тест тест</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+      <div class="item" >
+        <img src="" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>ninja zx-8r</h1></div>
+          <div class="desc"><p>Тест тест тест</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+      <div class="item" >
+        <img src="" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>ninja zx-8r</h1></div>
+          <div class="desc"><p>Тест тест тест</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+      <div class="item" >
+        <img src="" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>ninja zx-8r</h1></div>
+          <div class="desc"><p>Тест тест тест</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+      <div class="item" style="background-color: green;">
+        <img src="" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>ninja zx-8r</h1></div>
+          <div class="desc"><p>Тест тест тест</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+      <div class="item" style="background-color: brown;">
+        <img src="" alt="">
+        <div class="slaider-content">
+          <div class="name"><h1>Lorem</h1></div>
+          <div class="desc"><p>Тест тест тест</p>
+            <button>Подробнее</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<section class="catalog">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="catalog-title">
+            <h2>Каталог</h2>
+            <button>Вся мототехника</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-6 catalog-grid">
+            <div class="catalog-content item-1">
+              <img src="./media/image/catalog1.png" alt="">
+              <h3>Мотоциклы</h3>
+              <div class="item-hover">
+                <!-- <h3>Мотоциклы</h3> -->
+                  <ul class="list-hover">
+                    <li><a href="">KTM</a></li>
+                    <li><a href="">Kawasaki</a></li>
+                    <li><a href="">Bajaj</a></li>
+                    <li><a href="">Смотреть все</a></li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 catalog-grid">
+          <div class="catalog-content item-2">
+            <h3>Лодочные моторы</h3>
+            <img src="./media/image/catalog2.png" alt="">
+            <div class="item-hover">
+              <!-- <h3>Мотоциклы</h3> -->
+                <ul class="list-hover">
+                  <li><a href="">Tohatsu</a></li>
+                  <li><a href="">Смотреть все</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 catalog-grid">
+          <div class="catalog-content">
+            <h3>Снегоходы</h3>
+            <img src="./media/image/catalog3.png" alt="">
+            <div class="item-hover">
+              <!-- <h3>Мотоциклы</h3> -->
+                <ul class="list-hover">
+                  <li><a href="">Русская Механика</a></li>
+                  <li><a href="">Arctic Cat</a></li>
+                  <li><a href="">Смотреть все</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-6 catalog-grid">
+        <div class="catalog-content">
+          <h3>Квадроциклы</h3>
+          <img src="./media/image/catalog4.png" alt="">
+            <div class="item-hover">
+              <!-- <h3>Мотоциклы</h3> -->
+                <ul class="list-hover">
+                  <li><a href="">KTM</a></li>
+                  <li><a href="">Kawasaki</a></li>
+                  <li><a href="">Bajaj</a></li>
+                  <li><a href="">Смотреть все</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+        <div class="col-12 col-lg-8 catalog-grid">
+          <div class="catalog-content">
+            <h3>Гидроциклы</h3>
+            <img src="./media/image/catalog5.png" alt="">
+            <div class="item-hover">
+              <!-- <h3>Мотоциклы</h3> -->
+                <ul class="list-hover">
+                  <li><a href="">KTM</a></li>
+                  <li><a href="">Kawasaki</a></li>
+                  <li><a href="">Bajaj</a></li>
+                  <li><a href="">Смотреть все</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </div>
+</section>
+
+
+
+<section class="tabs">
+  <div class="tabs-container">
+    <div id="tabs">
+        <div class="tab whiteborder">Сервис</div>
+        <div class="line-1"></div>
+        <div class="tab">Обучение</div>
+        <div class="line-2"></div>
+        <div class="tab">Экипировка</div>
+        <div class="tabContent tab_block">
+            <div class="tabs_text">
+              <h1>Сервисное обслуживание</h1>
+            <p>Мы обслуживаем мототехнику разных брендов. Наши специалисты имеют большой опыт работы, знают особенности марок и некоторых моделей</p>
+            <button>Подробнее</button>
+            </div>
+        </div>
+        <div class="tabContent tab_block-1">
+          <div class="tabs_text">
+            <h1>Сервисное обслуживание</h1>
+          <p>Мы обслуживаем мототехнику разных брендов. Наши специалисты имеют большой опыт работы, знают особенности марок и некоторых моделей</p>
+          <button>Подробнее</button>
+          </div>
+        </div>
+        <div class="tabContent tab_block-2">
+          <div class="tabs_text">
+            <h1>Сервисное обслуживание</h1>
+          <p>Мы обслуживаем мототехнику разных брендов. Наши специалисты имеют большой опыт работы, знают особенности марок и некоторых моделей</p>
+          <button>Подробнее</button>
+          </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+<section class="nearby">
+  <div class="nearby-wrap">
+    
+      
+        <div class="nearby-content">
+          <div class="nearby-text">
+              <h2>Найти ближайший магазин</h2>
+              <button>Найти диллера</button>
+          </div>
+        </div>
+     
+      
+        <div class="nearby-content">
+        
+              <section class="form">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form__title">Остались вопросы? <br> Напишите нам </div>
+                    </div>
+                  </div>
+                    <div class="row">
+                    <div class="col-12">
+                      <form id="contact-form">
+                        <div class="input-wrapper input-wrapper--name">
+                          <input type="text">
+                        </div>
+                        <div class="input-wrapper input-wrapper--email">
+                          <input type="text">
+                        </div>
+                        <input type="submit" class="submit form-submit" value="Оставить заявку">
+                      </form>
+                      <p>Нажимая кнопку Подробнее” вы соглашаетесь с <span>Политикой обработки<br>персональных данных сайта</span></p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+       
+        </div>
+      
+    
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <a href="/">
+          <img src="./media/icon/logo.png" alt="motodom" class="footer__logo">
+        </a>
+        <div class="footer__social">
+          <a href="#" class="item" >
+            <svg width="18" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path" d="M16 1.65739C15.405 1.93846 14.771 2.12477 14.11 2.21523C14.79 1.778 15.309 1.09092 15.553 0.26277C14.919 0.669847 14.219 0.957385 13.473 1.11785C12.871 0.427539 12.013 5.25105e-07 11.077 4.84191e-07C9.261 4.04811e-07 7.799 1.58738 7.799 3.53338C7.799 3.81338 7.821 4.08262 7.875 4.33892C5.148 4.19569 2.735 2.78815 1.114 0.644C0.831 1.17277 0.665 1.778 0.665 2.42954C0.665 3.65292 1.25 4.73738 2.122 5.36523C1.595 5.35446 1.078 5.18969 0.64 4.93015C0.64 4.94092 0.64 4.95492 0.64 4.96892C0.64 6.68554 1.777 8.11138 3.268 8.43985C3.001 8.51846 2.71 8.55615 2.408 8.55615C2.198 8.55615 1.986 8.54323 1.787 8.49585C2.212 9.89477 3.418 10.9232 4.852 10.9566C3.736 11.8968 2.319 12.4632 0.784999 12.4632C0.515999 12.4632 0.257999 12.4503 -5.42667e-07 12.4148C1.453 13.4238 3.175 14 5.032 14C11.068 14 14.368 8.61538 14.368 3.948C14.368 3.79185 14.363 3.64108 14.356 3.49139C15.007 2.99385 15.554 2.37246 16 1.65739Z" fill="white"/>
+              </svg> 
+          </a>
+          <a href="#" class="item">
+            <svg width="18"  viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path" fill-rule="evenodd" clip-rule="evenodd" d="M11.6961 1.5027e-06C13.7325 1.76434e-06 14.7988 0.298464 15.3764 1.03015C15.9566 1.76502 16 2.89063 16 4.52405L16 7.47608C16 9.34766 15.723 10.4288 15.0738 11.0909C14.4407 11.7367 13.4621 12 11.6961 12L4.30379 12C0.6656 12 -2.51822e-07 10.4766 -1.11181e-07 7.47607L2.71878e-08 4.52405C9.97833e-08 2.97522 1.52235e-07 1.8562 0.560981 1.09668C1.13636 0.317749 2.22075 2.8532e-07 4.30379 5.52949e-07L11.6961 1.5027e-06ZM6.91536 8.27649L10.2722 6.40686C10.4427 6.31189 10.5495 6.12378 10.5493 5.91858C10.549 5.71362 10.4418 5.52576 10.271 5.43128L6.91417 3.57361C6.75422 3.48511 6.56248 3.49194 6.40831 3.59168C6.25419 3.69141 6.16016 3.86963 6.16016 4.06177L6.16016 7.78906C6.16016 7.98145 6.25445 8.15979 6.40888 8.25952C6.49089 8.3125 6.58349 8.33911 6.67629 8.33911C6.75825 8.33911 6.84031 8.31836 6.91536 8.27649Z" fill="white"/>
+              </svg>
+              
+          </a>
+          <a href="#" class="item">
+            <svg width="18"  viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path" fill-rule="evenodd" clip-rule="evenodd" d="M3.96933 8.09583L0.282607 6.71289C-0.0918464 6.5719 -0.0950997 6.04065 0.278288 5.896L15.4087 0.0300309C15.7295 -0.0946029 16.0604 0.187746 15.9906 0.526369L13.2753 13.6522C13.2113 13.962 12.8498 14.1027 12.5946 13.9161L8.88801 11.2118C8.66289 11.0475 8.35606 11.0563 8.14064 11.2327L6.0856 12.9164C5.84704 13.1124 5.48763 13.0032 5.39632 12.7078L3.96933 8.09583ZM12.3719 2.90015L5.16662 7.35986C4.89046 7.53113 4.76043 7.86633 4.84966 8.18005L5.6287 10.931C5.68401 11.126 5.96556 11.106 5.99238 10.9045L6.19494 9.396C6.23313 9.11194 6.36796 8.85034 6.57697 8.65479L12.5234 3.09985C12.6346 2.99609 12.5014 2.82019 12.3719 2.90015Z" fill="white"/>
+              </svg>
+              
+          </a>
+          <a href="#" class="item">
+            <svg width="18"  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path" fill-rule="evenodd" clip-rule="evenodd" d="M10.1364 4.43077e-07L3.86341 1.68876e-07C1.73313 7.57583e-08 -7.5761e-08 1.73321 -1.68879e-07 3.86349L-4.43081e-07 10.1365C-5.36202e-07 12.2669 1.73313 14 3.86341 14L10.1364 14C12.2669 14 14 12.2668 14 10.1365L14 3.86349C14.0001 1.73321 12.2669 5.36202e-07 10.1364 4.43077e-07ZM10.7587 2.3396C10.5194 2.3396 10.2843 2.43649 10.1153 2.60625C9.94544 2.77518 9.84781 3.01036 9.84781 3.25051C9.84781 3.48991 9.94552 3.72501 10.1153 3.89477C10.2842 4.0637 10.5194 4.16142 10.7587 4.16142C10.9989 4.16142 11.2332 4.0637 11.403 3.89477C11.5727 3.72501 11.6696 3.48983 11.6696 3.25051C11.6696 3.01036 11.5727 2.77518 11.403 2.60625C11.234 2.43649 10.9989 2.3396 10.7587 2.3396ZM3.39255 7.00021C3.39255 5.01103 5.01082 3.39276 6.99999 3.39276C8.98917 3.39276 10.6074 5.01103 10.6074 7.00021C10.6074 8.9893 8.98917 10.6075 6.99999 10.6075C5.01082 10.6075 3.39255 8.9893 3.39255 7.00021ZM4.6347 7.00012C4.6347 8.3043 5.69582 9.36526 6.99999 9.36526C8.30417 9.36526 9.36529 8.3043 9.36529 7.00012C9.36529 5.69587 8.30425 4.63483 6.99999 4.63483C5.69574 4.63483 4.6347 5.69587 4.6347 7.00012Z" fill="white"/>
+              </svg>
+              
+          </a>
+        </div>
+        <div class="footer__coop">Мотодом © 2019. <br> Все права защищены</div>
+      </div>
+      <div class="col-3">
+        <a href="#" class="footer__link">Главная</a>
+        <a href="#" class="footer__link">Сервис</a>
+        <a href="#" class="footer__link">Обучение</a>
+        <a href="#" class="footer__link">О компании</a>
+        <a href="#" class="footer__link">Новости</a>
+        <a href="#" class="footer__link">Контакты</a>
+      </div>
+      <div class="col-3">
+        <a href="#" class="footer__link">Мотоциклы</a>
+        <a href="#" class="footer__link">Снегоходы</a>
+        <a href="#" class="footer__link">Лодочные моторы</a>
+        <a href="#" class="footer__link">Квадроциклы</a>
+        <a href="#" class="footer__link">Лодки</a>
+        <a href="#" class="footer__link">Гидроциклы</a>
+        <a href="#" class="footer__link">Экипировка</a>
+      </div>
+      <div class="col-3">
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <a href="#" class="footer__link">Реквизиты компании</a>
+        <a href="#" class="footer__link">Презентация компании</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="buildjs/index.js"></script>
+<script>
+
+var tab;
+var tabContent;
+
+window.onload=function () {
+    tabContent = document.getElementsByClassName('tabContent');
+    tab = document.getElementsByClassName('tab');
+    hideTabsContent(1);
+}
+
+function hideTabsContent(a) {
+    for (var i=a; i<tabContent.length; i++){
+        tabContent[i].classList.remove('show');
+        tabContent[i].classList.add('hide');
+        tab[i].classList.remove('whiteborder');
+    }
+}
+
+document.getElementById('tabs').onclick=function (event) {
+    var target=event.target;
+    if (target.className =='tab') {
+        for(var i=0; i<tab.length; i++){
+            if(target == tab[i]){
+                showTabsContent(i);
+                break;
+            }
+        }
+    }
+}
+
+function showTabsContent(b) {
+    if(tabContent[b].classList.contains('hide')) {
+        hideTabsContent(0);
+        tab[b].classList.add('whiteborder');
+        tabContent[b].classList.remove('hide');
+        tabContent[b].classList.add('show');
+    }
+    
+}
+</script>
+</body>
+</html>

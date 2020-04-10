@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MOTODOM</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <a class="logo-link" href="#">
+        <img class="logo" src="./media/icon/new-logo.svg" alt="logo">
+      </a>
+      <ul id="nav" class="out">
+        <li>
+          <a class="click"  href="#" onclick="openMenu();" ><img src="./media/icon/icon-motocylce.svg" alt="icon motocylce" width="22" height="13">Каталог</a>
+        </li>
+        <li>
+          <a href="#" ><img src="./media/icon/icon-offer.svg" alt="motodom" width="22" height="13">
+            Акции</a> 
+        </li>
+        <li>
+          <a href="#"><img src="./media/icon/icon-hat.svg" alt="motodom" width="22" height="13">Аксесуары</a>
+        </li>
+        <li>
+          <div class="burger-wrap">
+            <img src="./media/icon/icon-burger.svg" alt="motodom" width="22" height="13">
+            <input type="checkbox" id="check-menu" >
+            <label class="a" for="check-menu">Еще</label>
+            <div class="main-menu">
+              <ul class="submenu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Школа</a></li>
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+        </div>
+        </li>
+        <div class="line"></div>
+      </ul>
+      
+    </nav>
+    <div id="nav-trigger" class="nav-trigger open">
+      <span class="line-burger"></span>
+      <span class="line-burger"></span>
+      <span class="line-burger"></span>
+    </div>
+    <div class="header-contacts">
+      <div class="phone">
+        <h4>Телефон</h4>
+        <a href="#" class="text">+7 (843) 276-66-76</a>
+      </div>
+      <div class="header-btn">
+        <button>Связаться с нами</button>
+      </div>
+    </div>
+
+</header>
+ 
+
+
+
+<section class="page-catalog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-catalog__title">Мотоциклы</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <a href="#" class="page-catalog__item">
+          <img src="./media/image/moto.png" alt="item">
+          <span class="name">KTM</span>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="#" class="page-catalog__item">
+          <img src="./media/image/moto.png" alt="item">
+          <span class="name">KTM</span>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="#" class="page-catalog__item">
+          <img src="./media/image/moto.png" alt="item">
+          <span class="name">KTM</span>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="#" class="page-catalog__item">
+          <img src="./media/image/moto.png" alt="item">
+          <span class="name">KTM</span>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="#" class="page-catalog__item">
+          <img src="./media/image/moto.png" alt="item">
+          <span class="name">KTM</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MODAL -->
+<div id="modal-catalog" class="modal-container">
+  <!-- <div class="overlay"> -->
+    <div class="modal">
+      <div class="modal-content">
+        <img src="./media/image/modal1.png" alt="">
+        <h2>Мотоциклы</h2>
+        <ul>
+          <li><a href="#">KTM</a></li>
+          <li><a href="#">Kawasaki</a></li>
+          <li><a href="#">Bajaj</a></li>
+          <li><a href="#">TGB</a></li>
+          <li><a href="#">CF - MOTO</a></li>
+          <li><a href="#">Apollo</a></li>
+          <li><a href="#">BSE</a></li>
+          <li><a href="#">Смотреть все</a></li>
+          
+        </ul>
+      </div>
+      <div class="modal-content">
+        <img src="./media/image/modal2.png" alt="">
+        <h2>Лодочные моторы</h2>
+        <ul>
+          <li><a href="#">Tohatsu</a></li>
+          <li><a href="#">Смотреть все</a></li>
+        </ul>
+      </div>
+      <div class="modal-content">
+        <img src="./media/image/modal3.png" alt="">
+        <h2>СНЕГОХОДЫ</h2>
+        <ul>
+          <li><a href="#">Русская Механика</a></li>
+          <li><a href="#">Arctic Cat</a></li>
+          <li><a href="#">Смотреть все</a></li>
+        </ul>
+        
+      </div>
+      <div class="modal-content">
+        <img src="./media/image/modal4.png" alt="">
+        <h2>КВАДРОЦИКЛЫ</h2>
+        <ul>
+          <li><a href="#">CF - MOTO</a></li>
+          <li><a href="#">Русская Механика</a></li>
+          <li><a href="#">TGB</a></li>
+          <li><a href="#">Смотреть все</a></li>
+        </ul>
+      </div>
+      <div class="modal-content">
+        <img src="./media/image/modal5.png" alt="">
+        <h2>Гидроциклы</h2>
+        <ul>
+          <li><a href="#">CF - MOTO</a></li>
+          <li><a href="#">Русская Механика</a></li>
+          <li><a href="#">TGB</a></li>
+          <li><a href="#">Смотреть все</a></li>
+        </ul>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>
+
+<!--end MODAL -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="buildjs/index.js"></script>
+<script>
+
+
+
+</script>
+</body>
+</html>

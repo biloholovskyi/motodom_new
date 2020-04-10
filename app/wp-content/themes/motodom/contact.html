@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MOTODOM</title>
+</head>
+<body>
+<header class="header">
+  <a class="header__logo" href="/">
+    <img src="./media/icon/logo.png" alt="motodom">
+  </a>
+  <div class="header__address">
+    <div class="address item">
+      <div class="icon"></div>
+      <div class="text">Казань, УЛ. ПРОСПЕКТ ПОБЕДЫ, 200</div>
+      <div class="decor icon"></div>
+    </div>
+    <div class="phone item">
+      <div class="icon"></div>
+      <a href="tel:78432766676" class="text">+7 (843) 276-66-76</a>
+    </div>
+  </div>
+  <div class="header__menu-button">
+    <span>Меню</span>
+    <div class="hamburger">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </div>
+</header>
+
+
+<section class="contact-page">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+  <div class="contact-page__map" id="map"></div>
+  <div class="container" style="max-width: 1200px;">
+    <div class="row">
+      <div class="col-12 col-lg-6" style="padding-right: 0; overflow: visible;">
+        <div class="contact-page__wrapper">
+          <div class="contact-page__title">
+            <h1>Наши магазины</h1>
+          </div>
+        </div>
+        <div class="contact-page__list">
+          <div class="item item--active">
+            <div class="name">мотодом ОРЕНБУРГ</div>
+            <div class="address">Оренбург, ул. Братьев Башиловых 11</div>
+            <div class="number">(3532) 427 000</div>
+          </div>
+          <div class="item">
+            <div class="name">мотодом ОРЕНБУРГ</div>
+            <div class="address">Оренбург, ул. Братьев Башиловых 11</div>
+            <div class="number">(3532) 427 000</div>
+          </div>
+          <div class="item">
+            <div class="name">мотодом ОРЕНБУРГ</div>
+            <div class="address">Оренбург, ул. Братьев Башиловых 11</div>
+            <div class="number">(3532) 427 000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="contact">
+  <div class="contact-wrap">
+    <div class="contact-content">
+      <div class="contact-page__title">
+        <h1>Наши магазины</h1>
+      </div>
+      <div class="contact-page__list">
+        <div class="item item--active">
+          <div class="name">мотодом ОРЕНБУРГ</div>
+          <div class="address">Оренбург, ул. Братьев Башиловых 11</div>
+          <div class="number">(3532) 427 000</div>
+        </div>
+        <div class="item">
+          <div class="name">мотодом ОРЕНБУРГ</div>
+          <div class="address">Оренбург, ул. Братьев Башиловых 11</div>
+          <div class="number">(3532) 427 000</div>
+        </div>
+        <div class="item">
+          <div class="name">мотодом ОРЕНБУРГ</div>
+          <div class="address">Оренбург, ул. Братьев Башиловых 11</div>
+          <div class="number">(3532) 427 000</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-map">
+
+    </div>
+  </div>
+</section> -->
+
+
+<section class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="form__title">Остались вопросы? <br> Напишите нам </div>
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-12">
+        <form id="contact-form">
+          <div class="input-wrapper input-wrapper--name">
+            <input type="text">
+          </div>
+          <div class="input-wrapper input-wrapper--email">
+            <input type="text">
+          </div>
+          <input type="submit" class="submit" value="Оставить заявку">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  [class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    -webkit-filter: brightness(100%) grayscale(100%) invert(80%);
+    /* Chrome 19+ & Safari 6+ */
+  }
+</style>
+
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <a href="/">
+          <img src="./media/icon/logo.png" alt="motodom" class="footer__logo">
+        </a>
+        <div class="footer__social">
+          <a href="#" class="item" style="background-image: url(./media/icon/twitter.svg);"></a>
+          <a href="#" class="item" style="background-image: url(./media/icon/youtube.svg);"></a>
+          <a href="#" class="item" style="background-image: url(./media/icon/telegram.svg);"></a>
+          <a href="#" class="item" style="background-image: url(./media/icon/instagram.svg);"></a>
+        </div>
+        <div class="footer__coop">Мотодом © 2019. <br> Все права защищены</div>
+      </div>
+      <div class="col-3">
+        <a href="#" class="footer__link">Главная</a>
+        <a href="#" class="footer__link">Сервис</a>
+        <a href="#" class="footer__link">Обучение</a>
+        <a href="#" class="footer__link">О компании</a>
+        <a href="#" class="footer__link">Новости</a>
+        <a href="#" class="footer__link">Контакты</a>
+      </div>
+      <div class="col-3">
+        <a href="#" class="footer__link">Мотоциклы</a>
+        <a href="#" class="footer__link">Снегоходы</a>
+        <a href="#" class="footer__link">Лодочные моторы</a>
+        <a href="#" class="footer__link">Квадроциклы</a>
+        <a href="#" class="footer__link">Лодки</a>
+        <a href="#" class="footer__link">Гидроциклы</a>
+        <a href="#" class="footer__link">Экипировка</a>
+      </div>
+      <div class="col-3">
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <a href="#" class="footer__link">Реквизиты компании</a>
+        <a href="#" class="footer__link">Презентация компании</a>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="buildjs/index.js"></script>
+<script>
+  ymaps.ready(init);
+  function init(){
+    var myMap = new ymaps.Map("map", {
+      center: [51.767703, 55.198824],
+      zoom: 17
+    });
+
+    myMap.behaviors.disable(['drag', 'scrollZoom', 'dblClickZoom']);
+
+    myMap.controls
+      .remove('trafficControl')
+      .remove('fullscreenControl')
+      .remove('rulerControl')
+      .remove('typeSelector')
+      .remove('searchControl')
+      .remove('zoomControl')
+      .remove('geolocationControl');
+
+    var myPin = new ymaps.Placemark([51.767703, 55.198824],
+      {
+        balloonContentHeader: 'BRP',
+        balloonContentBody: 'BRP',
+        balloonContentFooter: 'BRP',
+        hintContent: 'BRP'
+      },
+      {
+        iconLayout: 'default#image',
+        // iconImageHref: '../wp-content/themes/motodom/media/icon/pin.png',
+        iconImageHref: './media/icon/pin.png',
+        iconImageSize: [83.14, 64],
+        iconImageOffset: [0, 0]
+      });
+
+    myMap.geoObjects.add(myPin);
+  }
+
+  $(document).ready(function () {
+    let windowWidth = $(window).width();
+    let containerWidth = $('.container').width();
+    let wrapper = $('.contact-page__wrapper').width();
+    let mapWidth = windowWidth - ((windowWidth - containerWidth) / 2 + wrapper);
+
+    // $('#map').css('width', mapWidth + 'px');
+  });
+</script>
+</body>
+</html>
