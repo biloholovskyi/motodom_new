@@ -249,15 +249,18 @@
   $(document).ready(() => {
     (() => {
       const n = $(".slider .item").length < 10 ? `0${$(".slider .item").length}` : $(".slider .item").length;
+      $('.fix_home').css('background-image', 'url(' + $('.fix_slider__wrapper .item').eq(0).attr('data-img') + ')');
       $(".slider__count .all").html(n)
     })(), $(".slider__nav .next").on("click", n => (n => {
       const e = $(".item--active"), t = e.next(".item").length > 0 ? e.next(".item") : $(".slider .item").eq(0);
       e.removeClass("item--active"), t.addClass("item--active");
+      $('.fix_home').css('background-image', 'url(' + t.attr('data-img') + ')');
       const o = t.index() < 10 ? `0${t.index()}` : t.index();
       $(".slider__count .cur").html(o)
     })()), $(".slider__nav .prev").on("click", n => (() => {
       const n = $(".item--active"), e = n.prev(".item").length > 0 ? n.prev(".item") : $(".slider .item").last();
       n.removeClass("item--active"), e.addClass("item--active");
+      $('.fix_home').css('background-image', 'url(' + e.attr('data-img') + ')');
       const t = e.index() < 10 ? `0${e.index()}` : e.index();
       $(".slider__count .cur").html(t)
     })()), $(".contact-page__list .item").on("click", o), $(".form form .input-wrapper input").on("input", a), $(".main-block__logo .item").on("click", i), $(".showForm").on("click", s), $(".modal-form--form .modal-form__close").on("click", l), $(".modal-form--nav .modal-form__close").on("click", d), $(".header__menu-button").on("click", c), $(".address__wrapper .text").on("click", m), $("#contact-form").on("submit", (function (n) {
@@ -299,30 +302,30 @@
     }))
 
     $('.burger-wrap').click(function(){
-     
+
       $('.main-menu').toggleClass('active');
 
     })
 
-    $(document).mouseup(function (e){ 
-      var div = $(".main-menu, .burger-wrap"); 
-      if (!div.is(e.target) 
-          && div.has(e.target).length === 0) { 
-        div.removeClass('active'); 
+    $(document).mouseup(function (e){
+      var div = $(".main-menu, .burger-wrap");
+      if (!div.is(e.target)
+        && div.has(e.target).length === 0) {
+        div.removeClass('active');
       }
     });
 
-    $(document).mouseup(function (e){ 
-      var div = $("#modal-catalog, .click"); 
-      if (!div.is(e.target) 
-          && div.has(e.target).length === 0) { 
-        div.removeClass('active'); 
+    $(document).mouseup(function (e){
+      var div = $("#modal-catalog, .click");
+      if (!div.is(e.target)
+        && div.has(e.target).length === 0) {
+        div.removeClass('active');
       }
     });
 
 
-    
-    
+
+
 
 
   }), $(window).resize((function () {

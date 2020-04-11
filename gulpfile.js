@@ -50,4 +50,5 @@ gulp.task('default', function() {
         .pipe(browserSync.stream());
     });
     gulp.watch(pathThemes + "**/*.php").on('change', browserSync.reload);
+    gulp.watch(pathThemes + "**/*.css").on('change', browserSync.reload);
 });
