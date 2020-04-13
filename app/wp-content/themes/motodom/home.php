@@ -38,13 +38,13 @@ get_header();
                 setup_postdata($post);
                 $slider_count++;
                 $slider_btn = get_field('slider_link');
-                if ($slider_btn == '') {
+                if ($slider_count == 1) {
                   ?>
                   <div class="item item--active" data-img="<?php the_field('photo_slider'); ?>">
                     <div class="slaider-content">
                       <div class="name"><h1><?php the_field('slider-title'); ?></h1></div>
                       <div class="desc"><p><?php the_field('slider-text'); ?></p>
-                        
+                        <a href="<?php the_field('slider_link'); ?>" class="fix_slider_link">Подробнее</a>
                       </div>
                     </div>
                   </div>
