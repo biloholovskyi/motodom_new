@@ -37,13 +37,14 @@ get_header();
               foreach ($posts as $post) {
                 setup_postdata($post);
                 $slider_count++;
-                if ($slider_count == 1) {
+                $slider_btn = get_field('slider_link');
+                if ($slider_btn == '') {
                   ?>
                   <div class="item item--active" data-img="<?php the_field('photo_slider'); ?>">
                     <div class="slaider-content">
                       <div class="name"><h1><?php the_field('slider-title'); ?></h1></div>
                       <div class="desc"><p><?php the_field('slider-text'); ?></p>
-                        <a href="<?php the_field('slider_link'); ?>" class="fix_slider_link">Подробнее</a>
+                        
                       </div>
                     </div>
                   </div>
@@ -82,7 +83,7 @@ get_header();
         <div class="col-12">
           <div class="catalog-title">
             <h2>Каталог</h2>
-            <button>Вся мототехника</button>
+            <button onclick="location.href='https://motodom.store/catalog/'; ">Вся мототехника</button>
           </div>
         </div>
       </div>
@@ -113,8 +114,9 @@ get_header();
           <div class="<?php echo $catalog_class; ?>">
             <div class="catalog-content item-1">
               <img src="<?php the_field('catagery_poster'); ?>" alt="<?php the_title(); ?>">
-              <h3><?php the_title(); ?></h3>
-              <div class="item-hover">
+              <a href="<?php the_permalink($cat_home_ID); ?>"><h3><?php the_title(); ?></h3></a>
+        
+              <div onclick="location.href='<?php the_permalink($cat_home_ID); ?>'" class="item-hover">
                 <ul class="list-hover">
                   <?php
                   $args = array(
@@ -145,6 +147,7 @@ get_header();
                   <li><a href="<?php the_permalink($cat_home_ID); ?>">Смотреть все</a></li>
                 </ul>
               </div>
+        
             </div>
           </div>
           <?php
@@ -174,7 +177,7 @@ get_header();
           <div class="tabs_text">
             <h1><?php the_field('serv_title'); ?></h1>
             <p><?php the_field('serv_text'); ?></p>
-            <button>Подробнее</button>
+            <!-- <button>Подробнее</button> -->
           </div>
         </div>
         <div class="tabContent tab_block-1">
@@ -182,7 +185,7 @@ get_header();
           <div class="tabs_text">
             <h1><?php the_field('educ_title'); ?></h1>
             <p><?php the_field('educ_text'); ?></p>
-            <button>Подробнее</button>
+            <!-- <button>Подробнее</button> -->
           </div>
         </div>
         <div class="tabContent tab_block-2">
@@ -190,7 +193,7 @@ get_header();
           <div class="tabs_text">
             <h1><?php the_field('equip_title'); ?></h1>
             <p><?php the_field('equip_text'); ?></p>
-            <button>Подробнее</button>
+            <!-- <button>Подробнее</button> -->
           </div>
         </div>
 
@@ -203,7 +206,7 @@ get_header();
       <div class="nearby-content">
         <div class="nearby-text">
           <h2>Выберите ближайший Мотодом</h2>
-          <button>Выбрать</button>
+          <button onclick="location.href='https://motodom.store/contact/'; ">Выбрать</button>
         </div>
       </div>
       <div class="nearby-content">

@@ -1761,7 +1761,8 @@ label {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   -webkit-transition: .5s;
-  transition: .5s
+  transition: .5s;
+  cursor: pointer;
 }
 
 .catalog .catalog-content .item-hover ul {
@@ -2575,10 +2576,10 @@ label {
   height: 24px;
   top: 50%;
   margin-top: -12px;
-  right: 16px;
+  right: 26px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 12px;
+  background-size: 11px;
   background-image: url(../media/icon/arrow.svg)
 }
 

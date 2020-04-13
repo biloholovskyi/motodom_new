@@ -30,11 +30,11 @@
           <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-offer-hover.svg'; ?>" alt="icon motocylce" width="22" height="13">  
           Акции</a> 
         </li>
-        <li>
+        <!-- <li>
           <a href="#"><img class="nav-hover-close" src="<?php echo get_template_directory_uri() . '/media/icon/icon-hat.svg'; ?>" alt="motodom" width="22" height="13">
           <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-hat-hover.svg'; ?>" alt="icon motocylce" width="22" height="13">
           Экипировка</a>
-        </li>
+        </li> -->
         <li>
           <div class="burger-wrap">
             <img class="nav-hover-close" src="<?php echo get_template_directory_uri() . '/media/icon/icon-burger.svg'; ?>" alt="motodom" width="22" height="13">
@@ -81,7 +81,7 @@
         $args = array(
           'numberposts' => 1,
           'orderby' => 'date',
-          'order' => 'ASC',
+          'order' => 'DESC',
           'post_type' => 'contact',
           'suppress_filters' => true,
         );
@@ -122,8 +122,8 @@
         $cat_ID = $post->ID;
         ?>
         <div class="modal-content">
-          <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="<?php the_title(); ?>">
-          <h2><?php the_title(); ?></h2>
+        <a href="<?php the_permalink($cat_ID); ?>"><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="<?php the_title(); ?>"></a>
+          <h2><a href="<?php the_permalink($cat_ID); ?>"><?php the_title(); ?></a></h2>
           <ul>
             <?php
             $args = array(

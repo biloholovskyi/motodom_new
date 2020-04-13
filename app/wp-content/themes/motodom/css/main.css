@@ -275,7 +275,7 @@ img {
   background-image: url(../media/image/fon.png);
   background-repeat: no-repeat;
   background-position: right top;
-  padding: 160px 0;
+  padding: 190px 0;
   width: 100%
 }
 
@@ -416,7 +416,7 @@ img {
 
 .modal-form__close {
   position: absolute;
-  top: 28px;
+  top: 60px;
   right: 0;
   display: -webkit-box;
   display: flex;
@@ -589,7 +589,9 @@ img {
   padding-top: 88px
 }
 
-.page-catalog--inner .page-catalog__bread {
+.page-catalog--inner .page-catalog__bread,
+.page-catalog--page .page-catalog__bread
+{
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -.02em;
@@ -598,7 +600,8 @@ img {
   padding-top: 30px;
 }
 
-.page-catalog--inner .page-catalog__bread a {
+.page-catalog--inner .page-catalog__bread a,
+.page-catalog--page .page-catalog__bread a {
   color: #333
 }
 

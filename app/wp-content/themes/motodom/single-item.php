@@ -12,7 +12,7 @@ $category = get_post($category);
       <div class="col-12 col-md-6">
         <div class="page-catalog__bread">
           <a href="/">Главная</a> > <a href="<?php the_permalink($category->ID); ?>"><?php echo $category->post_title; ?></a> > <a href="<?php the_permalink($brand->ID); ?>"><?php echo $brand->post_title; ?></a> > <?php the_title(); ?>
-        </div>
+        </div> 
         <div class="page-catalog__title"><?php the_title(); ?></div>
         <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="motodom" class="page-catalog--last__img page-catalog--last__img--mobile">
         <div class="page-catalog__small-desc"><?php the_field('item_small'); ?></div>
