@@ -43,8 +43,15 @@ get_header();
                   <div class="item item--active" data-img="<?php the_field('photo_slider'); ?>">
                     <div class="slaider-content">
                       <div class="name"><h1><?php the_field('slider-title'); ?></h1></div>
-                      <div class="desc"><p><?php the_field('slider-text'); ?></p>
-                        <a href="<?php the_field('slider_link'); ?>" class="fix_slider_link">Подробнее</a>
+                      <div class="desc">
+                        <p><?php the_field('slider-text'); ?></p>
+                        <?php
+                        if (strlen(get_field('slider_link'))) {
+                          ?>
+                          <a href="<?php the_field('slider_link'); ?>" class="fix_slider_link">Подробнее</a>
+                          <?php
+                        }
+                        ?>
                       </div>
                     </div>
                   </div>
@@ -54,8 +61,15 @@ get_header();
                   <div class="item" data-img="<?php the_field('photo_slider'); ?>">
                     <div class="slaider-content">
                       <div class="name"><h1><?php the_field('slider-title'); ?></h1></div>
-                      <div class="desc"><p><?php the_field('slider-text'); ?></p>
-                        <a href="<?php the_field('slider_link'); ?>" class="fix_slider_link">Подробнее</a>
+                      <div class="desc">
+                        <p><?php the_field('slider-text'); ?></p>
+                        <?php
+                        if (strlen(get_field('slider_link'))) {
+                          ?>
+                          <a href="<?php the_field('slider_link'); ?>" class="fix_slider_link">Подробнее</a>
+                          <?php
+                        }
+                        ?>
                       </div>
                     </div>
                   </div>
@@ -83,7 +97,7 @@ get_header();
         <div class="col-12">
           <div class="catalog-title">
             <h2>Каталог</h2>
-            <button onclick="location.href='https://motodom.store/catalog/'; ">Вся мототехника</button>
+            <button onclick="location.href='<?php echo get_home_url(); ?>/catalog/'; ">Вся мототехника</button>
           </div>
         </div>
       </div>
@@ -115,7 +129,7 @@ get_header();
             <div class="catalog-content item-1">
               <img src="<?php the_field('catagery_poster'); ?>" alt="<?php the_title(); ?>">
               <a href="<?php the_permalink($cat_home_ID); ?>"><h3><?php the_title(); ?></h3></a>
-        
+
               <div onclick="location.href='<?php the_permalink($cat_home_ID); ?>'" class="item-hover">
                 <ul class="list-hover">
                   <?php
@@ -147,7 +161,7 @@ get_header();
                   <li><a href="<?php the_permalink($cat_home_ID); ?>">Смотреть все</a></li>
                 </ul>
               </div>
-        
+
             </div>
           </div>
           <?php
@@ -206,7 +220,7 @@ get_header();
       <div class="nearby-content">
         <div class="nearby-text">
           <h2>Выберите ближайший Мотодом</h2>
-          <button onclick="location.href='https://motodom.store/contact/'; ">Выбрать</button>
+          <button onclick="location.href='<?php echo get_home_url(); ?>/contact/'; ">Выбрать</button>
         </div>
       </div>
       <div class="nearby-content">
@@ -291,9 +305,11 @@ get_header();
   };
 
   const fixHomeSlider = () => {
-    if(window.innerWidth > 575) {
-      const imgH = document.querySelector('.fix_bottom').offsetHeight + 'px';
-      document.querySelector('.fix_home').style.height = `calc(100vh + ${imgH})`;
+    if (window.innerWidth > 575) {
+      const imgH = document.querySelector('.fix_bottom').offsetHeight;
+      const margin = imgH - 88;
+      document.querySelector('.fix_home').style.height = `calc(100vh + ${imgH}px)`;
+      document.querySelector('.fix_slider__wrapper').style.marginTop = '-' + margin + 'px';
     }
   };
 
@@ -304,7 +320,7 @@ get_header();
     // вывести доты
     document.querySelectorAll('.fix_slider__wrapper .item').forEach(slid => {
       counter++;
-      if(counter === 1) {
+      if (counter === 1) {
         $('.slider_mobile_nav_fix').append('<div class="dot dot-active" data-img="' + slid.getAttribute('data-img') + '"></div>');
       } else {
         $('.slider_mobile_nav_fix').append('<div class="dot" data-img="' + slid.getAttribute('data-img') + '"></div>');

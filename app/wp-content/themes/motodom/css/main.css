@@ -2303,6 +2303,10 @@ img {
 }
 
 @media (max-width: 575px) {
+  .fix_slider__wrapper {
+    margin-top: 0 !important;
+  }
+
   .slider_mobile_nav_fix {
     display: flex;
     align-items: center;

@@ -2,6 +2,6 @@
 *.rar
 *.zip
 /node_modules
-/vendore
+/vendor
 /library
 /backup
