@@ -7,7 +7,7 @@ Template Name: Catalog
 get_header();
 ?>
 
-<section class="page-catalog">
+<section class="page-catalog page-catalog--page">
   <div class="container">
     <div class="row">
       <?php

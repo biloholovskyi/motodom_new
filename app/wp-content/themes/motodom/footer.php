@@ -83,8 +83,8 @@
           foreach ($posts as $post) {
             setup_postdata($post);
               ?>
-              <li><a href="<?php echo get_field('footer_details'); ?>" target="_blank" class="footer__link footer__link--last">Политика конфиденциальности</a></li>
-              <li><a href="<?php the_field('footer_political'); ?>" target="_blank" class="footer__link footer__link--last">Реквизиты компании</a></li>
+              <li><a href="<?php the_field('footer_political'); ?>" target="_blank" class="footer__link footer__link--last">Политика конфиденциальности</a></li>
+              <li><a href="<?php echo get_field('footer_details'); ?>" target="_blank" class="footer__link footer__link--last">Реквизиты компании</a></li>
               <?php
           }
           wp_reset_postdata(); // сброс

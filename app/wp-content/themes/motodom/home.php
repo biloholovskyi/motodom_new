@@ -131,7 +131,6 @@ get_header();
               <a href="<?php the_permalink($cat_home_ID); ?>"><h3><?php the_title(); ?></h3></a>
 
               <div onclick="location.href='<?php the_permalink($cat_home_ID); ?>'" class="item-hover">
-              <div class="hover-bg"></div>
                 <ul class="list-hover">
                   <?php
                   $args = array(
