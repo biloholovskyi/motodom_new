@@ -5,11 +5,11 @@
 # Все изменения между этими отметками будут перезаписаны.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /motodom_new/app/
+RewriteBase /app/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /motodom_new/app/index.php [L]
+RewriteRule . /app/index.php [L]
 </IfModule>
 
 # END WordPress
