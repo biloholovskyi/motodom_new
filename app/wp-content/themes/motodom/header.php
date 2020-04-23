@@ -13,6 +13,16 @@
 </head>
 <body>
 
+<div id="page-preloader" class="preloader">
+        <img src="<?php echo get_template_directory_uri() . '/media/icon/logo/preloader.png'; ?>" alt="preloader">
+        <div id="load_perc"  >0%</div>
+        <div class="loader">
+          
+          <div class="loader-bar"></div>
+        </div> 
+    </div>
+
+
 <header class="header">
     <nav class="navigation">
       <a class="logo-link" href="/">
