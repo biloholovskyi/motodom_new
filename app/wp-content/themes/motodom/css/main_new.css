@@ -2661,6 +2661,7 @@ label {
 	height: 5px;
 	position: relative;
 	width: 200px;
+  margin-top: 20px;
 }
 
 #load_perc {
@@ -2674,9 +2675,10 @@ label {
   	height: 100%;
     position: relative;
     background:  #00FFFF;
-    width: 10px;
+    width: 1%;
+    transition: all .9s;
 	
-	animation: cssload-width 1.5s cubic-bezier(0.45, 0, 1, 1) infinite;
+	/*animation: cssload-width 1.5s cubic-bezier(0.45, 0, 1, 1) infinite;*/
 }
 
 
