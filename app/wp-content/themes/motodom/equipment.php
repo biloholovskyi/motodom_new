@@ -1,29 +1,29 @@
 <?php
 /*
-Template Name: Catalog
+Template Name: Equipment
 */
 ?>
 <?php
-get_header(); 
+get_header();
 ?>
 
 <section class="page-catalog page-catalog--page">
   <div class="container">
     <div class="row">
     <div class="col-12">
-      <div class="page-catalog__title">Каталог мототехники</div>
+      <div class="page-catalog__title">Экипировка</div>
     </div>
       <?php
       $args = array(
         'numberposts' => -1,
         'orderby'     => 'date',
         'order'       => 'DESC',
-        'post_type'   => 'catalog',
+        'post_type'   => 'equipment',
         'suppress_filters' => true,
       );
 
       $posts = get_posts( $args );
-      foreach($posts as $post){ setup_postdata($post);
+      foreach($posts as $post){ setup_postdata($post);  
         ?>
         <div class="col-6 col-md-4">
           <a href="<?php the_permalink(); ?>" class="page-catalog__item">
@@ -39,4 +39,7 @@ get_header();
   </div>
 </section>
 
-<?php get_footer(); ?>
+
+<?php
+get_footer();
+?>

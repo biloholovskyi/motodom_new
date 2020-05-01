@@ -2694,7 +2694,66 @@ label {
 	}
 }
 
+.owl-theme .owl-nav {
+  position: absolute;
+  top: -87px;
+    right: 111px;
+    width: 20%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between
+}
 
+.owl-theme .owl-nav button.owl-prev {
+  left: 24px
+}
+
+.owl-theme .owl-nav button.owl-next {
+  right: 24px
+}
+
+.owl-theme .owl-nav button.owl-next,.owl-theme .owl-nav button.owl-prev {
+  width: 54px;
+  height: 54px;
+  background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(16px);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0;
+  position: relative
+}
+
+..owl-theme .owl-nav button.owl-next span, . .owl-theme .owl-nav button.owl-prev span {
+  display: none
+}
+
+ .owl-theme .owl-nav button.owl-next::after,  .owl-theme .owl-nav button.owl-prev:after {
+  content: "";
+  background: url(../media/icon/arrow-right-slider.svg) center/cover;
+  width: 25px;
+  height: 25px;
+  position: absolute
+}
+
+.owl-theme .owl-nav button.owl-next::after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+
+.owl-theme .owl-nav button.owl-next span, .owl-theme .owl-nav button.owl-prev span {
+  display: none;
+}
+
+.owl-theme .owl-dots {
+  display: none;
+}
 
 @media screen and (max-height: 815px) {
   .main-block {
@@ -2806,6 +2865,11 @@ label {
   .about-page-title {
     max-width: 500px;
     padding-top: 316px
+  }
+
+  .owl-theme .owl-nav {
+
+      right: 0;
   }
 }
 
@@ -3185,6 +3249,14 @@ label {
 
   .about-page-content .about-text p {
     font-size: 16px;
+  }
+
+  .owl-theme .owl-nav {
+    display: none;
+  }
+
+  .owl-theme .owl-dots {
+    display: block;
   }
 }
 
@@ -3619,6 +3691,11 @@ label {
   .about-block {
     padding-bottom: 0;
   }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -3712,8 +3789,8 @@ label {
   }
 
   .page-catalog .page-catalog__item img {
-    height: 90.68px;
-    margin-bottom: 6px
+    height: 80%;
+    margin-bottom: 6px; 
   }
 
   .page-catalog .page-catalog__item .name {
@@ -3996,6 +4073,7 @@ label {
   .tabs-container #tabs .banner-block {
     padding: 100px 40px 100px 40px;
   }
+  
 }
 
 @media screen and (max-width: 320px) {

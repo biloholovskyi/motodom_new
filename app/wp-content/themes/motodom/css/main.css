@@ -1059,7 +1059,7 @@ img {
   align-items: center
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) { 
   .main-block__logo {
     max-width: 540px;
     left: 50%;
@@ -2108,10 +2108,7 @@ img {
     margin-bottom: 16px
   }
 
-  .page-catalog .page-catalog__item img {
-    height: 90.68px;
-    margin-bottom: 6px
-  }
+  
 
   .page-catalog .page-catalog__item .name {
     font-size: 12px;

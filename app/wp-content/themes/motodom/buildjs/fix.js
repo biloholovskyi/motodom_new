@@ -6,6 +6,26 @@ $(document).ready(function () {
   $('.modal-KD .showForm').on('click', function () {
     $('.modal-form--nav').fadeOut('fast');
   });
+ 
+ 
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+
 });
 
 // preloader

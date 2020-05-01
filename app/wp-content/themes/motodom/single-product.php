@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="page-catalog__category">
-    <div class="page-catalog__category__wrapper">
+    <div class="page-catalog__category__wrapper"> 
       <div class="container">
         <div class="row">
           <div class="col-12">

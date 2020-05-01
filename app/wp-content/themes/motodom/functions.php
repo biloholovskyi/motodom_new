@@ -12,7 +12,7 @@ function menu() {
   register_nav_menu('footer', 'Меню в подвале');
 //  register_nav_menu('footer', 'Меню в подвале');
   register_nav_menu('footer_doc', 'Документы в подвале');
-  add_theme_support( 'post-thumbnails', array('post', 'catalog', 'product', 'item', 'brand_main', 'offers', 'slider', 'school') );
+  add_theme_support( 'post-thumbnails', array('post', 'catalog', 'product', 'item', 'brand_main', 'offers', 'slider', 'school', 'equipment','equipment_product') );
   add_filter('excerpt_more', function($more) {
     return '';
   });
@@ -20,15 +20,17 @@ function menu() {
 
 function style_them() {
   wp_enqueue_style('style', get_stylesheet_uri());
+  wp_enqueue_style('owl_default', get_template_directory_uri() . '/css/owl.theme.default.min.css');
+  wp_enqueue_style('owl', get_template_directory_uri() . '/css/owl.carousel.min.css');
   wp_enqueue_style('submain', get_template_directory_uri() . '/css/main_new.css');
   wp_enqueue_style('schoolPage', get_template_directory_uri() . '/css/school-page.css');
   wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
-//  wp_enqueue_style('owl', get_template_directory_uri() . '/css/owl.carousel.min.css');
+
 //  wp_enqueue_style('popup', get_template_directory_uri() . '/css/magnific-popup.css');
 }
 
 function script_them() {
-//  wp_enqueue_script('carousel', get_template_directory_uri() . '/js/owl.carousel.min.js');
+ wp_enqueue_script('carousel', get_template_directory_uri() . '/buildjs/owl.carousel.min.js');
 //  wp_enqueue_script('pupupscript', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js');
   wp_enqueue_script('script', get_template_directory_uri() . '/buildjs/index.js');
   wp_enqueue_script('subscript', get_template_directory_uri() . '/buildjs/index_new.js');
@@ -461,6 +463,84 @@ function register_post_types(){
     'rest_base'           => null, // $post_type. C WP 4.7
     'menu_position'       => 12,
     'menu_icon'           => 'dashicons-tide',
+    //'capability_type'   => 'post',
+    //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
+    //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
+    'hierarchical'        => false,
+    'supports'            => array('title', 'thumbnail'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+    'taxonomies'          => array(),
+    'has_archive'         => false,
+    'rewrite'             => true,
+    'query_var'           => true,
+  ) );
+
+  register_post_type('equipment', array(
+    'label'  => null,
+    'labels' => array(
+      'name'               => 'Экипировка', // основное название для типа записи
+      'singular_name'      => 'Экипировка', // название для одной записи этого типа
+      'add_new'            => 'Добавить экипировку', // для добавления новой записи
+      'add_new_item'       => 'Добавление экипировки ', // заголовка у вновь создаваемой записи в админ-панели.
+      'edit_item'          => 'Редактирование экипировки ', // для редактирования типа записи
+      'new_item'           => 'Новая экипировка', // текст новой записи
+      'view_item'          => 'Смотреть экипировку', // для просмотра записи этого типа.
+      'search_items'       => 'Искать экипировку', // для поиска по этим типам записи
+      'not_found'          => 'Не найдена экипировку', // если в результате поиска ничего не было найдено
+      'not_found_in_trash' => 'Не найдена экипировка в корзине', // если не было найдено в корзине
+      'parent_item_colon'  => '', // для родителей (у древовидных типов)
+      'menu_name'          => 'Экипировка', // название меню
+    ),
+    'description'         => '',
+    'public'              => true,
+    'publicly_queryable'  => true, // зависит от public
+    'exclude_from_search' => true, // зависит от public
+    'show_ui'             => true, // зависит от public
+    'show_in_menu'        => true, // показывать ли в меню адмнки
+    'show_in_admin_bar'   => true, // по умолчанию значение show_in_menu
+    'show_in_nav_menus'   => true, // зависит от public
+    'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+    'rest_base'           => null, // $post_type. C WP 4.7
+    'menu_position'       => 13,
+    'menu_icon'           => 'dashicons-shield-alt',
+    //'capability_type'   => 'post',
+    //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
+    //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
+    'hierarchical'        => false,
+    'supports'            => array('title', 'thumbnail'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+    'taxonomies'          => array(),
+    'has_archive'         => false,
+    'rewrite'             => true,
+    'query_var'           => true,
+  ) );
+
+  register_post_type('equipment_product', array(
+    'label'  => null,
+    'labels' => array(
+      'name'               => 'Экипировка подкатегория', // основное название для типа записи
+      'singular_name'      => 'Экипировка подкатегория', // название для одной записи этого типа
+      'add_new'            => 'Добавить подкатегорию экипировки', // для добавления новой записи
+      'add_new_item'       => 'Добавление подкатегории экипировки', // заголовка у вновь создаваемой записи в админ-панели.
+      'edit_item'          => 'Редактирование подкатегории экипировки', // для редактирования типа записи
+      'new_item'           => 'Новая подкатегория экипировки', // текст новой записи
+      'view_item'          => 'Смотреть подкатегорию экипировки', // для просмотра записи этого типа.
+      'search_items'       => 'Искать подкатегорию экипировки', // для поиска по этим типам записи
+      'not_found'          => 'Не найдена подкатегория экипировки', // если в результате поиска ничего не было найдено
+      'not_found_in_trash' => 'Не найдена подкатегория экипировки в корзине', // если не было найдено в корзине
+      'parent_item_colon'  => '', // для родителей (у древовидных типов)
+      'menu_name'          => 'Экипировка подкатегория', // название меню
+    ),
+    'description'         => '',
+    'public'              => true,
+    'publicly_queryable'  => true, // зависит от public
+    'exclude_from_search' => true, // зависит от public
+    'show_ui'             => true, // зависит от public
+    'show_in_menu'        => true, // показывать ли в меню адмнки
+    'show_in_admin_bar'   => true, // по умолчанию значение show_in_menu
+    'show_in_nav_menus'   => true, // зависит от public
+    'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+    'rest_base'           => null, // $post_type. C WP 4.7
+    'menu_position'       => 11,
+    'menu_icon'           => 'dashicons-edit',
     //'capability_type'   => 'post',
     //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
     //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав

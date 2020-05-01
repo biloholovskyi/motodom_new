@@ -101,7 +101,8 @@ $category = get_post($category);
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-2"></div>
+      <div class="col-12 col-lg-2"></div> 
+        <div class="owl-carousel owl-theme">
       <?php
       $args = array(
         'numberposts' => -1,
@@ -119,22 +120,25 @@ $category = get_post($category);
         setup_postdata($post);
         $item_brand = get_field('item_brand');
 
-        if ($brand->ID == $item_brand->ID and $curr_id != $post->ID and $count < 2) {
+        if ($brand->ID == $item_brand->ID and $curr_id != $post->ID) { 
           $count++;
           ?>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a href="<?php the_permalink(); ?>" class="page-catalog__item">
-              <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="item">
-              <span class="name"><?php the_title(); ?></span>
-              <?php $price = get_field('item_price'); ?>
-              <span class="price"><?php if($price) {echo 'От '.$price.'  рублей';} else {echo 'Цена по&nbsp;запросу';} ?></span>
-            </a>
+          <div class="item">
+            <div class="col-12 ">
+                  <a href="<?php the_permalink(); ?>" class="page-catalog__item">
+                    <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="item">
+                    <span class="name"><?php the_title(); ?></span>
+                    <?php $price = get_field('item_price'); ?>
+                    <span class="price"><?php if($price) {echo 'От '.$price.'  рублей';} else {echo 'Цена по&nbsp;запросу';} ?></span>
+                  </a>
+              </div>
           </div>
           <?php
         }
       }
       wp_reset_postdata(); // сброс
       ?>
+        </div>
     </div>
   </div>
 </section>
