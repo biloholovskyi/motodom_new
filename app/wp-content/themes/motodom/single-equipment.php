@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-12">
       <div class="page-catalog__bread"> 
-          <a href="/">Главная</a><a href="<?php the_permalink($brand->ID); ?>"><?php echo $brand->post_title; ?></a> > <?php the_title(); ?>
+          <a href="/">Главная</a><a href="<?php the_permalink($eq_brand->ID); ?>"><?php echo $eq_brand->post_title; ?></a> > <?php the_title(); ?>
         </div> 
         <div class="page-catalog__title"><?php the_title(); ?></div>
       </div>
@@ -26,7 +26,7 @@
       foreach ($posts as $post) {
         setup_postdata($post);
         $eq_product_ID = get_field('eq_category'); 
-        print_r(get_field('eq_category'));
+        
         if($eq_category_ID == $eq_product_ID) {
           ?>
           
