@@ -61,12 +61,12 @@
 
       foreach ($posts as $post) {
         setup_postdata($post);
-        $eq_item_brand = get_field('Eq_subcategory');
-        $eq_item_subcategory = get_field('eq_brand');
+        $eq_item_subcategory = get_field('Eq_subcategory');
+        $eq_item_brand = get_field('eq_brand');
 
-        if ($eq_brand_ID == $eq_item_brand->ID) {
+        if ($eq_brand_ID == $eq_item_subcategory->ID) {
           ?>
-          <div class="col-6 col-md-4 <?php echo 'sub-'.$eq_item_subcategory->ID; if(!$under_eq_subcategory) { echo ' hidden-col'; } ?>">
+          <div class="col-6 col-md-4 <?php echo 'sub-'.$eq_item_brand->ID; if(!$under_eq_subcategory) { echo ' hidden-col'; } ?>">
             <a href="<?php the_permalink(); ?>" class="page-catalog__item">
               <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="item">
               <span class="name"><?php the_title(); ?></span>
@@ -84,7 +84,7 @@
 </section>
 <?php get_footer(); ?>
 <script>
-  $(document).ready(function () {
+  $(document).ready(function () { 
     let sub = [];
     <?php
     $args = array(

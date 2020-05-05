@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <section class="page-catalog page-catalog--page">
   <div class="container">
     <div class="row">
@@ -25,7 +26,7 @@
       
       foreach ($posts as $post) {
         setup_postdata($post);
-        $eq_product_ID = get_field('eq_category'); 
+        $eq_product_ID = get_field('eq_category');  
         
         if($eq_category_ID == $eq_product_ID) {
           ?>

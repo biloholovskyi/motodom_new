@@ -74,9 +74,9 @@ $eq_category = get_post($eq_category);
 
       foreach ($posts as $post) {
         setup_postdata($post);
-        $eq_brand = get_field('Eq_subcategory');
+        $eq_sub = get_field('Eq_subcategory');
 
-        if ($eq_brand->ID == $eq_brand->ID and $eq_curr_id != $post->ID) { 
+        if ($eq_sub->ID == $eq_sub->ID and $eq_curr_id != $post->ID) { 
           $count++;
           ?>
           <div class="item">

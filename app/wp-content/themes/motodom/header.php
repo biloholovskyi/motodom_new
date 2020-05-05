@@ -48,7 +48,9 @@
           Акции</a>
       </li>
       <!-- <li>
-          <a href="#"><img class="nav-hover-close" src="<?php echo get_template_directory_uri() . '/media/icon/icon-hat.svg'; ?>" alt="motodom" width="22" height="13">
+          <a href="/equipment/"><img class="nav-hover-close" 
+                           src="<?php echo get_template_directory_uri() . '/media/icon/icon-hat.svg'; ?>" 
+                           alt="motodom" width="22" height="13">
           <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-hat-hover.svg'; ?>" alt="icon motocylce" width="22" height="13">
           Экипировка</a>
         </li> -->
