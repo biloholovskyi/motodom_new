@@ -2255,9 +2255,13 @@ label {
 }
 
 .about-page-content img {
-  height: auto;
-  width: 100%;
-  margin: 0 auto
+    min-height: 592px;
+    min-width: 440px;
+    object-position: center;
+    object-fit: cover;
+    height: fit-content;
+    width: 100%;
+    margin: 0 auto
 }
 
 .about-page-content .about-text h2 {
@@ -3927,7 +3931,7 @@ label {
     line-height: 30px
   }
 
-  .about-page-content .about-text button {
+  .about-page-content .about-text button { 
     font-size: 15px
   }
 
@@ -4157,5 +4161,50 @@ label {
   .tabs-container #tabs .banner-block {
     padding: 100px 40px 100px 40px;
   }
+  .phone a {
+    font-size: 14px;
+  }
+  .tabs-container #tabs .tab {
+    font-size: 12px;
+  }
 }
 
+
+/* accessories-page */
+
+.accessories-page .item {
+  width: 100%;
+  margin-bottom: 80px
+}
+
+.accessories-page .item img {
+  height: 30px;
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-bottom: 24px
+}
+
+.accessories-page .item__list {
+  display: block;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: -.01em;
+  color: #222;
+  position: relative;
+  padding-left: 36px
+}
+
+.accessories-page .item__list::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  top: 0;
+  margin-top: 12px;
+  left: 0;
+  background-image: url(../media/icon/doc.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute
+}

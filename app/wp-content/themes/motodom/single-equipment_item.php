@@ -25,13 +25,6 @@ $eq_category = get_post($eq_category);
       <div class="col-12 col-md-6">
         <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="motodom" class="page-catalog--last__img">
       </div>
-      <div class="col-12">
-        <div class="page-catalog--last__nav">
-          <div class="item item--active">Описание</div>
-          <a target="_blank" href="<?php the_field('eq_tech'); ?>" class="item">Технические характеристики</a>
-          <a target="_blank" href="<?php the_field('eq_doc'); ?>" class="item">Документация</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -99,7 +92,7 @@ $eq_category = get_post($eq_category);
   </div>
 </section>
 
-<section class="tabs">
+<!-- <section class="tabs">
 <?php
 $tabs_img1 = get_field( 'serv_photo' );
 $tabs_img2 = get_field( 'educ_photo' );
@@ -136,7 +129,7 @@ $tabs_img2 = get_field( 'educ_photo' );
         </div>
     </div>
 </div>
-</section>
+</section> -->
 
 <section class="nearby" style="background-color: #fff">
   <div class="nearby-wrap">
