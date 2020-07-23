@@ -10,7 +10,7 @@ $arr = array(
   'Телефон: ' => $tel,
 );
 
-foreach ($arr as $key => $value) {
+foreach ($arr as $key => $value) { 
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
 

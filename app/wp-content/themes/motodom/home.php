@@ -243,7 +243,7 @@ get_header();
                   <input type="submit" class="submit form-submit" value="Оставить заявку">
                 </form>
                 <p>Нажимая кнопку Подробнее” вы соглашаетесь с
-                  <span>Политикой обработки<br>персональных данных сайта</span></p>
+                  <span><a href="<?php the_field('politics_data'); ?>" target="_blank">Политикой обработки<br>персональных данных</a></span></p>
               </div>
             </div>
           </div>

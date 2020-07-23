@@ -152,17 +152,18 @@ Template Name: school
       </div>
       <div class="row">
         <div class="col-12">
-          <form id="contact-form">
+          <form id="school-form">
             <div class="input-wrapper input-wrapper--name">
               <input type="text">
             </div>
             <div class="input-wrapper input-wrapper--email">
               <input type="text">
             </div>
-            <input type="submit" class="submit" value="Оставить заявку">
+            <input type="submit" class="submit" value="Оставить заявку"> 
           </form>
         </div>
       </div>
-    </div>
+    </div> 
   </section>
+
   <?php get_footer(); ?>
