@@ -54,7 +54,7 @@ $block_2img = get_field( 'block_2-img' );
           <div class="about-text">
             <h2><?php the_field('block_2-title'); ?></h2>
             <p><?php the_field('block_2-text'); ?></p>
-            <button>Заполните анкету</button>
+            <button onclick=" window.open('<?php the_field('anketa'); ?>','_blank')" >Заполните анкету</button>
           </div>
         </div>
       </div>

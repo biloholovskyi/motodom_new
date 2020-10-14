@@ -29,7 +29,7 @@ $block_2img = get_field( 'block_2-img' );
       <div class="row">
         <div class="col-12 col-lg-5 col-md-5">
           <div class="about-page-content order-lg-last order-firts">
-            <img src="<?php echo $block_1img; ?>" alt="">
+            <img src="<?php echo $block_1img; ?>" alt="image">
           </div>
         </div>
         <div class="col-12 col-lg-7 col-md-7 order-lg-firts order-last">

@@ -26,7 +26,7 @@
         </div>
         <div class="footer__coop">Мотодом © 2019. <br> Все права защищены</div>
       </div>
-      <div class="col-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
         <?php
         wp_nav_menu( [
           'theme_location'  => 'footer',
@@ -48,7 +48,7 @@
         ] );
         ?>
       </div>
-      <div class="col-6 col-lg-3 col-mb">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-mb">
         <ul>
           <?php
           $args = array(

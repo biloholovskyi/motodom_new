@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-12">
         <div class="page-catalog__bread">
-          <a href="/">Главная</a> > <a href="<?php echo get_the_permalink($id_category); ?>"><?php echo get_the_title($id_category); ?></a> > <?php the_field('brand_name'); ?>
+          <a href="/">Главная</a> ><a href="/catalog">Каталог ></a> <a href="<?php echo get_the_permalink($id_category); ?>"><?php echo get_the_title($id_category); ?></a> > <?php the_field('brand_name'); ?>
         </div>
         <div class="page-catalog__title"><?php the_field('brand_name'); ?></div>
       </div>

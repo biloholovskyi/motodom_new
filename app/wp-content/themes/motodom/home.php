@@ -235,14 +235,14 @@ get_header();
               <div class="col-12">
                 <form id="contact-form">
                   <div class="input-wrapper input-wrapper--name">
-                    <input type="text">
+                    <input type="text" required>
                   </div>
                   <div class="input-wrapper input-wrapper--email">
-                    <input type="text">
+                    <input type="text" required>
                   </div>
                   <input type="submit" class="submit form-submit" value="Оставить заявку">
                 </form>
-                <p>Нажимая кнопку Подробнее” вы соглашаетесь с
+                <p>Нажимая кнопку “оставить заявку” вы соглашаетесь с
                   <span><a href="<?php the_field('politics_data'); ?>" target="_blank">Политикой обработки<br>персональных данных</a></span></p>
               </div>
             </div>
@@ -255,6 +255,7 @@ get_header();
 
 <?php get_footer(); ?>
 <script>
+
   // TABS SCRIPT
 
   var tab;

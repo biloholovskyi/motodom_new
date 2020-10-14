@@ -77,6 +77,6 @@ function image_loaded() {
       }
     }, 1000);
   }
-
-
 }
+
+

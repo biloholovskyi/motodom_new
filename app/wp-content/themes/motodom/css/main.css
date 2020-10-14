@@ -5,7 +5,8 @@
   outline: 0;
   color: #fff;
   box-sizing: border-box;
-  font-family: HeliosExt, serif;
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
 
 html {
@@ -371,7 +372,7 @@ img {
   letter-spacing: .04em;
   text-transform: uppercase;
   color: #fff;
-  background: #66c;
+  background: #3BFF00;
   border: none;
   display: block;
   margin: 40px 0 0;
@@ -758,7 +759,7 @@ img {
   letter-spacing: .04em;
   text-transform: uppercase;
   color: #fff;
-  background: #66c;
+  background: #3BFF00;
   padding: 20px 32px 14px;
   display: inline-block;
   white-space: nowrap

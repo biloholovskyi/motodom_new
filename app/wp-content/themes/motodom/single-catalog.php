@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-12">
       <div class="page-catalog__bread"> 
-          <a href="/">Главная</a><a href="<?php the_permalink($brand->ID); ?>"><?php echo $brand->post_title; ?></a> > <?php the_title(); ?>
+          <a href="/">Главная</a><a href="/catalog">> Каталог</a><a href="<?php the_permalink($brand->ID); ?>"><?php echo $brand->post_title; ?></a> > <?php the_title(); ?>
         </div> 
         <div class="page-catalog__title"><?php the_title(); ?></div>
       </div>
