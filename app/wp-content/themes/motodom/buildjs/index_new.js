@@ -1,4 +1,4 @@
-! function (n) {
+!function (n) {
   var e = {};
 
   function t(o) {
@@ -27,9 +27,9 @@
     if (4 & e && "object" == typeof n && n && n.__esModule) return n;
     var o = Object.create(null);
     if (t.r(o), Object.defineProperty(o, "default", {
-        enumerable: !0,
-        value: n
-      }), 2 & e && "string" != typeof n)
+      enumerable: !0,
+      value: n
+    }), 2 & e && "string" != typeof n)
       for (var a in n) t.d(o, a, function (e) {
         return n[e]
       }.bind(null, a));
@@ -99,8 +99,9 @@
           css: i[1],
           media: i[2],
           sourceMap: i[3]
-        }; -
-      1 !== m ? (r[m].references++, r[m].updater(p)) : r.push({
+        };
+      -
+        1 !== m ? (r[m].references++, r[m].updater(p)) : r.push({
         identifier: d,
         updater: v(p, e),
         references: 1
@@ -117,8 +118,8 @@
       a && (o.nonce = a)
     }
     if (Object.keys(o).forEach((function (n) {
-        e.setAttribute(n, o[n])
-      })), "function" == typeof n.insert) n.insert(e);
+      e.setAttribute(n, o[n])
+    })), "function" == typeof n.insert) n.insert(e);
     else {
       var r = i(n.insert || "head");
       if (!r) throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
@@ -161,7 +162,7 @@
       var i = h++;
       t = f || (f = c(e)), o = p.bind(null, t, i, !1), a = p.bind(null, t, i, !0)
     } else t = c(e), o = u.bind(null, t, e), a = function () {
-      ! function (n) {
+      !function (n) {
         if (null === n.parentNode) return !1;
         n.parentNode.removeChild(n)
       }(t)
@@ -328,54 +329,58 @@
       const n = $(".slider .item").length < 10 ? `0${$(".slider .item").length}` : $(".slider .item").length;
       $('.fix_home').css('background-image', 'url(' + $('.fix_slider__wrapper .item').eq(0).attr('data-img') + ')');
       $(".slider__count .all").html(n)
-    })(), $(".slider__nav .next").on("click", n => (n => {
+    })(),
+
+      $(".slider__nav .next").on("click", n => (n => {
       const e = $(".item--active"),
         t = e.next(".item").length > 0 ? e.next(".item") : $(".slider .item").eq(0);
       e.removeClass("item--active"), t.addClass("item--active");
       $('.fix_home').css('background-image', 'url(' + t.attr('data-img') + ')');
       const o = t.index() < 10 ? `0${t.index()}` : t.index();
       $(".slider__count .cur").html(o)
-    })()), $(".slider__nav .prev").on("click", n => (() => {
+    })()),
+
+      $(".slider__nav .prev").on("click", n => (() => {
       const n = $(".item--active"),
         e = n.prev(".item").length > 0 ? n.prev(".item") : $(".slider .item").last();
       n.removeClass("item--active"), e.addClass("item--active");
       $('.fix_home').css('background-image', 'url(' + e.attr('data-img') + ')');
       const t = e.index() < 10 ? `0${e.index()}` : e.index();
       $(".slider__count .cur").html(t)
-    })()), $(".contact-page__list .item").on("click", o), $(".form form .input-wrapper input").on("input", a), $(".main-block__logo .item").on("click", i), $(".showForm").on("click", s), $(".modal-form--form .modal-form__close").on("click", l), $(".modal-form--nav .modal-form__close").on("click", d), $(".header__menu-button").on("click", c), $(".address__wrapper .text").on("click", m), 
-    
-    $("#contact-form").on("submit", (function (n) { 
-      n.preventDefault(), $.ajax({
-        url: "/wp-content/themes/motodom/send.php", 
-        type: "POST",
-        data: "name=" + $("#input-name").val() + "&tel=" + $("#input-tel").val(),
-        success: function (n) {
-          $("#input-name").val(""), $("#input-tel").val(""), $("#input-name").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-tel").parent(".input-wrapper--input").removeClass("input-wrapper--input"), p()
-        }
-      })
-    })), 
+    })()), $(".contact-page__list .item").on("click", o), $(".form form .input-wrapper input").on("input", a), $(".main-block__logo .item").on("click", i), $(".showForm").on("click", s), $(".modal-form--form .modal-form__close").on("click", l), $(".modal-form--nav .modal-form__close").on("click", d), $(".header__menu-button").on("click", c), $(".address__wrapper .text").on("click", m),
 
-    $("#school-form").on("submit", (function (n) {  
-      n.preventDefault(), $.ajax({
-        url: "/wp-content/themes/motodom/send.php",    
-        type: "POST",
-        data: "name=" + $("#input-name").val() + "&tel=" + $("#input-tel").val(), 
-        success: function (n) {
-          $("#input-name").val(""), $("#input-tel").val(""), $("#input-name").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-tel").parent(".input-wrapper--input").removeClass("input-wrapper--input"), p()
-        } 
-      })  
-    })),  
-    
-    $("#about-form").on("submit", (function (n) {
-      n.preventDefault(), $.ajax({
-        url: "/wp-content/themes/motodom/send_about.php",
-        type: "POST",
-        data: "name=" + $("#input-name").val() + "&tel=" + $("#input-tel").val() + "&comment=" + $("#input-comment").val(),
-        success: function (n) {
-          $("#input-name").val(""), $("#input-tel").val(""), $("#input-comment").val(""), $("#input-name").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-tel").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-comment").parent(".input-wrapper--input").removeClass("input-wrapper--input"), p()
-        }
-      })
-    })), $("#modal-form").on("submit", (function (n) {
+      $("#contact-form").on("submit", (function (n) {
+        n.preventDefault(), $.ajax({
+          url: "/wp-content/themes/motodom/send.php",
+          type: "POST",
+          data: "name=" + $("#input-name").val() + "&tel=" + $("#input-tel").val(),
+          success: function (n) {
+            $("#input-name").val(""), $("#input-tel").val(""), $("#input-name").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-tel").parent(".input-wrapper--input").removeClass("input-wrapper--input"), p()
+          }
+        })
+      })),
+
+      $("#school-form").on("submit", (function (n) {
+        n.preventDefault(), $.ajax({
+          url: "/wp-content/themes/motodom/send.php",
+          type: "POST",
+          data: "name=" + $("#input-name").val() + "&tel=" + $("#input-tel").val(),
+          success: function (n) {
+            $("#input-name").val(""), $("#input-tel").val(""), $("#input-name").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-tel").parent(".input-wrapper--input").removeClass("input-wrapper--input"), p()
+          }
+        })
+      })),
+
+      $("#about-form").on("submit", (function (n) {
+        n.preventDefault(), $.ajax({
+          url: "/wp-content/themes/motodom/send_about.php",
+          type: "POST",
+          data: "name=" + $("#input-name").val() + "&tel=" + $("#input-tel").val() + "&comment=" + $("#input-comment").val(),
+          success: function (n) {
+            $("#input-name").val(""), $("#input-tel").val(""), $("#input-comment").val(""), $("#input-name").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-tel").parent(".input-wrapper--input").removeClass("input-wrapper--input"), $("#input-comment").parent(".input-wrapper--input").removeClass("input-wrapper--input"), p()
+          }
+        })
+      })), $("#modal-form").on("submit", (function (n) {
       n.preventDefault(), $.ajax({
         url: "/wp-content/themes/motodom/send.php",
         type: "POST",
@@ -418,11 +423,8 @@
     });
 
 
-
-
-
-
-  }), $(window).resize((function () {})), $(window).scroll(() => {
+  }), $(window).resize((function () {
+  })), $(window).scroll(() => {
     (() => {
       const n = $(".parallax-skip"),
         e = $(".parallax-item"),
@@ -484,4 +486,20 @@
         }
   }
 }]);
+
+
+// var myIndex = 0;
+// carousel();
+//
+// function carousel() {
+//   var i;
+//   var x = document.getElementsByClassName("item");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "block";
+//   }
+//   myIndex++;
+//   if (myIndex > x.length) {myIndex = 1}
+//   x[myIndex-1].style.display = "none";
+//   setTimeout(carousel, 2000); // Change image every 2 seconds
+// }
 
