@@ -152,12 +152,12 @@ Template Name: school
       </div>
       <div class="row">
         <div class="col-12">
-          <form id="school-form">
+          <form class="newForm" >
             <div class="input-wrapper input-wrapper--name">
-              <input type="text">
+              <input name="names" type="text">
             </div>
             <div class="input-wrapper input-wrapper--email">
-              <input type="text">
+              <input name="tele" type="text">
             </div>
             <input type="submit" class="submit" value="Оставить заявку"> 
           </form>

@@ -337,8 +337,15 @@
       e.removeClass("item--active"), t.addClass("item--active");
       $('.fix_home').css('background-image', 'url(' + t.attr('data-img') + ')');
       const o = t.index() < 10 ? `0${t.index()}` : t.index();
-      $(".slider__count .cur").html(o)
+      $(".slider__count .cur").html(o);
+     
+    
     })()),
+
+
+    // setInterval(function(){
+    //   $('.slider__nav .next').trigger('click');
+    // }, 6000);
 
       $(".slider__nav .prev").on("click", n => (() => {
       const n = $(".item--active"),

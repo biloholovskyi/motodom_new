@@ -233,12 +233,12 @@ get_header();
             </div>
             <div class="row">
               <div class="col-12">
-                <form id="contact-form">
+                <form class="newForm" id="contact-form">
                   <div class="input-wrapper input-wrapper--name">
-                    <input type="text" required>
+                    <input name="names" type="text" required>
                   </div>
                   <div class="input-wrapper input-wrapper--email">
-                    <input type="text" required>
+                    <input name="tele" type="text" required>
                   </div>
                   <input type="submit" class="submit form-submit" value="Оставить заявку">
                 </form>

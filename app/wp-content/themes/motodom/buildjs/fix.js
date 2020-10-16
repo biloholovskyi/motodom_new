@@ -79,5 +79,22 @@ function image_loaded() {
   }
 }
 
+$('.newForm').on('submit', function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: '/wp-content/themes/motodom/send.php',
+    type: 'POST',
+    data: $(this).serialize(),
+    success: function (data) {
+      $('.alert-modal').fadeIn('slow').css('display', 'flex');
+      $('input[type="text"], textarea').val('');
+      $('.input-wrapper--input').removeClass('input-wrapper--input');
+      setTimeout(function () {
+        $('.alert-modal').fadeOut('slow');
+      }, 2000)
+    }
+  });
+  return false;
+});
 
 

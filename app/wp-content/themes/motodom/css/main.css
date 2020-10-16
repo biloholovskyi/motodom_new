@@ -289,7 +289,9 @@ img {
   letter-spacing: -.02em;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 64px
+  margin-bottom: 64px;
+  font-family: 'Montserrat';
+  font-size: 30px;
 }
 
 .form .form-text {
@@ -553,7 +555,9 @@ img {
   letter-spacing: -.02em;
   text-transform: uppercase;
   color: #111;
-  margin-bottom: 32px
+  margin-bottom: 32px;
+  font-family: 'Montserrat';
+  font-size: 45px;
 }
 
 .page-catalog__item {
@@ -1549,7 +1553,7 @@ img {
   }
 
   .page-catalog .page-catalog__title {
-    font-size: 40px;
+    font-size: 37px;
     line-height: 50px
   }
 
@@ -1864,7 +1868,7 @@ img {
   }
 
   .nav-modal__menu ul li a {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 700;
     text-align: center;
@@ -1873,7 +1877,8 @@ img {
     font-family: HeliosCond;
     color: #fff;
     width: 100%;
-    display: block
+    display: block;
+    font-family: 'Montserrat';
   }
 
   .modal-form__logo {

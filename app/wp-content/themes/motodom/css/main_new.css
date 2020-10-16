@@ -1072,7 +1072,10 @@ label {
   font-size: 80px;
   line-height: 100px;
   letter-spacing: .08em;
-  text-transform: uppercase
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Montserrat';
+  letter-spacing: .02em;
 }
 
 .contact-page__list .item {
@@ -1487,15 +1490,15 @@ label {
 }
 
 .tabs-container #tabs .tabContent h1 {
-  font-family: HeliosCond;
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 90px;
   letter-spacing: .03em;
   text-transform: uppercase;
   color: #fff;
-  margin: 0 0 36px
+  margin: 0 0 36px;
+  font-family: 'Montserrat';
+  font-size: 50px;
+  line-height: 70px;
 }
 
 .tabs-container #tabs .tabContent p {
@@ -1568,13 +1571,15 @@ label {
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
-  line-height: 120%;
+  line-height: 177%;
   letter-spacing: .03em;
   text-transform: uppercase;
   max-width: 490px;
   margin: 0 auto 48px;
   position: relative;
   z-index: 2;
+  font-family: 'Montserrat';
+  font-size: 30px;
 }
 
 .nearby .nearby-wrap .nearby-content .nearby-text button {
@@ -1633,7 +1638,7 @@ label {
 .nearby .nearby-wrap .nearby-content .form #contact-form .submit {
   margin-top: 0;
   background-color: #3BFF00;
-  border: 2px solid #fff;
+  border: 2px solid #3BFF00 ;
   padding: 17px 32px;
   border-radius: 100px;
   margin: 0 auto;
@@ -1707,13 +1712,13 @@ label {
 }
 
 .catalog .catalog-title h2 {
-  font-family: HeliosCond;
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
   line-height: 90px;
-  letter-spacing: .04em;
-  text-transform: uppercase
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 65px;
+  letter-spacing: 1px;
 }
 
 .catalog .catalog-title button {
@@ -1771,10 +1776,10 @@ label {
 }
 
 .catalog .catalog-content h3 {
-  font-family: HeliosCond;
+  /*font-family: HeliosCond;*/
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 35px;
   letter-spacing: .04em;
   text-transform: uppercase;
@@ -2259,7 +2264,9 @@ label {
   line-height: 100px;
   letter-spacing: .08em;
   text-transform: uppercase;
-  margin: 0 0 36px
+  margin: 0 0 36px;
+  font-family: 'Montserrat';
+  font-size: 55px;
 }
 
 .about-page-title p {
@@ -2304,7 +2311,10 @@ label {
   font-size: 70px;
   line-height: 90px;
   text-transform: uppercase;
-  margin-bottom: 36px
+  margin-bottom: 36px;
+  line-height: 55px;
+  font-size: 40px;
+  font-family: 'Montserrat';
 }
 
 .about-page-content .about-text p {
@@ -2379,7 +2389,9 @@ label {
   letter-spacing: .08em;
   text-transform: uppercase;
   color: #fff;
-  margin: 0
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 55px;
 }
 
 .offers-item {
@@ -2593,15 +2605,15 @@ label {
 }
 
 .home .slider .item .name h1 {
-  font-family: HeliosCond;
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
   line-height: 100px;
-  letter-spacing: .08em;
   text-transform: uppercase;
   max-width: 720px;
-  margin: 0 0 24px
+  margin: 0 0 24px;
+  font-family: Montserrat;
+  font-size: 50px;
+  letter-spacing: .06em;
 }
 
 .home .slider .item .desc p {
@@ -2841,7 +2853,7 @@ label {
   }
 
   .about-page-content .about-text h2 {
-    font-size: 55px;
+    font-size: 40px;
     letter-spacing: 0
   }
 
@@ -2867,8 +2879,8 @@ label {
   }
 
   .tabs-container #tabs .tabContent h1 {
-    font-size: 60px;
-    line-height: 78px
+    font-size: 40px;
+    line-height: 70px;
   }
 
   .nearby .nearby-wrap {
@@ -2888,7 +2900,7 @@ label {
   }
 
   .catalog .catalog-content h3 {
-    font-size: 24px
+    font-size: 18px
   }
 
   .home .slider .item .slaider-content .name h1 {
@@ -3198,7 +3210,7 @@ label {
   }
 
   .nav-modal__menu ul li a {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 700;
     text-align: center;
@@ -3207,7 +3219,8 @@ label {
     font-family: HeliosCond;
     color: #fff;
     width: 100%;
-    display: block
+    display: block;
+    font-family: 'Montserrat';
   }
 
   .modal-form__logo {
@@ -3222,7 +3235,7 @@ label {
   }
 
   .about-page-content .about-text h2 {
-    font-size: 43px;
+    font-size: 30px;
     line-height: 53px;
     margin-bottom: 18px
   }
@@ -3675,7 +3688,7 @@ label {
   }
 
   .tabs-container #tabs .tabContent h1 {
-    font-size: 50px;
+    font-size: 43px;
     line-height: 63px
   }
 
@@ -3691,7 +3704,8 @@ label {
   }
 
   .catalog .catalog-title h2 {
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    font-size: 48px;
   }
 
   .catalog .catalog-title button {
@@ -3953,7 +3967,7 @@ label {
   }
 
   .about-page-title h1 {
-    font-size: 68px
+    font-size: 50px
   }
 
   .about-page-title p {
@@ -3962,7 +3976,7 @@ label {
   }
 
   .about-page-content .about-text h2 {
-    font-size: 32px;
+    font-size: 25px;
     line-height: 44px;
     text-align: center
   }
@@ -4001,7 +4015,7 @@ label {
   }
 
   .contact-page__wrapper .contact-page__title h1 {
-    font-size: 55px;
+    font-size: 40px;
     line-height: 65px
   }
 
@@ -4079,7 +4093,7 @@ label {
   }
 
   .tabs #tabs .tabContent .tabs_text h1 {
-    font-size: 27px
+    font-size: 20px
   }
 
   .tabs #tabs .tabContent .tabs_text p {
@@ -4128,8 +4142,8 @@ label {
   }
 
   .about-page-title h1 {
-    font-size: 57px;
-    line-height: 75px
+    font-size: 50px;
+    line-height: 65px
   }
 
   .about-page-title p {
@@ -4143,7 +4157,7 @@ label {
   }
 
   .about-page-content .about-text h2 {
-    font-size: 29px;
+    font-size: 21px;
     line-height: 44px
   }
 
@@ -4176,7 +4190,7 @@ label {
   }
 
   .offers-title h1 {
-    font-size: 63px
+    font-size: 50px
   }
 
   .offers-item p {

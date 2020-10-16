@@ -80,12 +80,12 @@ get_header();
         <div class="form__title">Остались вопросы? <br> Напишите нам </div>
       </div>
       <div class="col-12 col-md-6">
-        <form id="contact-form">
+        <form class="newForm">
           <div class="input-wrapper input-wrapper--name">
-            <input type="text" id="input-name">
+            <input name="names" type="text" id="input-name">
           </div>
           <div class="input-wrapper input-wrapper--email">
-            <input type="text" id="input-tel">
+            <input name="tele" type="text" id="input-tel">
           </div>
           <input type="submit" class="submit" value="Оставить заявку">
           <div class="form-text">Нажимая на кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
