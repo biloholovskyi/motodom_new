@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -35,7 +36,7 @@
                                        src="<?php echo get_template_directory_uri() . '/media/icon/icon-motocylce.svg'; ?>"
                                        alt="icon motocylce" width="22" height="13">
           <img class="nav-hover"
-               src="<?php echo get_template_directory_uri() . '/media/icon/icon-motocylce-hover.svg'; ?>"
+               src="<?php echo get_template_directory_uri() . '/media/icon/icon-motocylce-hover-green.svg'; ?>"
                alt="icon motocylce" width="22" height="13">
           Каталог</a>
       </li>
@@ -43,22 +44,22 @@
         <a href="/offers/"><img class="nav-hover-close"
                                 src="<?php echo get_template_directory_uri() . '/media/icon/icon-offer.svg'; ?>"
                                 alt="motodom" width="22" height="13">
-          <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-offer-hover.svg'; ?>"
+          <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-offer-hover-green.svg'; ?>"
                alt="icon motocylce" width="22" height="13">
           Акции</a>
       </li>
-      <!-- <li>
-          <a href="/equipment/"><img class="nav-hover-close" 
-                           src="<?php echo get_template_directory_uri() . '/media/icon/icon-hat.svg'; ?>" 
-                           alt="motodom" width="22" height="13">
-          <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-hat-hover.svg'; ?>" alt="icon motocylce" width="22" height="13">
-          Экипировка</a>
-        </li> -->
+<!--       <li>-->
+<!--          <a href="/equipment"><img class="nav-hover-close"-->
+<!--                           src="--><?php //echo get_template_directory_uri() . '/media/icon/icon-hat.svg'; ?><!--"-->
+<!--                           alt="motodom" width="22" height="13">-->
+<!--          <img class="nav-hover" src="--><?php //echo get_template_directory_uri() . '/media/icon/icon-hat-hover-green.svg'; ?><!--" alt="icon motocylce" width="22" height="13">-->
+<!--          Экипировка</a>-->
+<!--        </li>-->
       <li>
         <div class="burger-wrap">
           <img class="nav-hover-close" src="<?php echo get_template_directory_uri() . '/media/icon/icon-burger.svg'; ?>"
                alt="motodom" width="22" height="13">
-          <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-burger-hover.svg'; ?>"
+          <img class="nav-hover" src="<?php echo get_template_directory_uri() . '/media/icon/icon-burger-hover-green.svg'; ?>"
                alt="icon motocylce" width="22" height="13">
 
           <!-- <input type="checkbox" id="check-menu" > -->

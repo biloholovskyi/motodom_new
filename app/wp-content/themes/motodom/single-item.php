@@ -27,9 +27,9 @@ $category = get_post($category);
       </div>
       <div class="col-12">
         <div class="page-catalog--last__nav">
-          <div class="item item--active">Описание</div>
-          <a target="_blank" href="<?php the_field('item_tech'); ?>" class="item">Технические характеристики</a>
-          <a target="_blank" href="<?php the_field('item_doc'); ?>" class="item">Документация</a>
+<!--          <div class="item item--active">Описание</div>-->
+<!--          <a target="_blank" href="--><?php //the_field('item_tech'); ?><!--" class="item">Технические характеристики</a>-->
+<!--          <a target="_blank" href="--><?php //the_field('item_doc'); ?><!--" class="item">Документация</a>-->
         </div>
       </div>
     </div>
@@ -42,6 +42,7 @@ $category = get_post($category);
       <div class="main-desc">
         <div class="main-desc__title">Описание</div>
         <div class="main-desc__text"><?php the_field('item_desc'); ?></div>
+        <?php the_post(); ?>
       </div>
     </div>
   </div>
@@ -143,44 +144,44 @@ $category = get_post($category);
   </div>
 </section>
 
-<section class="tabs">
+<!--<section class="tabs">-->
 <?php
-$tabs_img1 = get_field( 'serv_photo' );
-$tabs_img2 = get_field( 'educ_photo' );
-?>
-  <div class="tabs-container banner-container">
-    <div id="tabs">
-        <div class="tabContent tab_block banner-block">
-          <img src="<?php echo $tabs_img1; ?>" alt="">
-            <div class="tabs_text">
-              <h1><?php the_field('serv_title'); ?></h1>
-            <p><?php the_field('serv_text'); ?></p>
-            <button><a href="<?php the_field('banner1_btn'); ?>">Подробнее</a></button>
-            </div>
-        </div>
-        <div class="tabContent tab_block-1 banner-block">
-        <img src="<?php echo $tabs_img2; ?>" alt="">
-          <div class="tabs_text">
-            <h1><?php the_field('educ_title'); ?></h1>
-          <p><?php the_field('educ_text'); ?></p>
-          <button>Подроб</button>
-          </div>
-        </div>
-    </div>
-</div>
-<div class="tabs-container banner-container">
-    <div id="tabs">
-        <div class="tabContent tab_block-1 banner-block">
-        <img src="<?php echo $tabs_img2; ?>" alt="">
-          <div class="tabs_text">
-            <h1><?php the_field('educ_title'); ?></h1>
-          <p><?php the_field('educ_text'); ?></p>
-          <button><a href="<?php the_field('banner2_btn'); ?>">Подробнее</a></button>
-          </div>
-        </div>
-    </div>
-</div>
-</section>
+//$tabs_img1 = get_field( 'serv_photo' );
+//$tabs_img2 = get_field( 'educ_photo' );
+//?>
+<!--  <div class="tabs-container banner-container">-->
+<!--    <div id="tabs">-->
+<!--        <div class="tabContent tab_block banner-block">-->
+<!--          <img src="--><?php //echo $tabs_img1; ?><!--" alt="">-->
+<!--            <div class="tabs_text">-->
+<!--              <h1>--><?php //the_field('serv_title'); ?><!--</h1>-->
+<!--            <p>--><?php //the_field('serv_text'); ?><!--</p>-->
+<!--            <button><a href="--><?php //the_field('banner1_btn'); ?><!--">Подробнее</a></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="tabContent tab_block-1 banner-block">-->
+<!--        <img src="--><?php //echo $tabs_img2; ?><!--" alt="">-->
+<!--          <div class="tabs_text">-->
+<!--            <h1>--><?php //the_field('educ_title'); ?><!--</h1>-->
+<!--          <p>--><?php //the_field('educ_text'); ?><!--</p>-->
+<!--          <button>Подроб</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="tabs-container banner-container">-->
+<!--    <div id="tabs">-->
+<!--        <div class="tabContent tab_block-1 banner-block">-->
+<!--        <img src="--><?php //echo $tabs_img2; ?><!--" alt="">-->
+<!--          <div class="tabs_text">-->
+<!--            <h1>--><?php //the_field('educ_title'); ?><!--</h1>-->
+<!--          <p>--><?php //the_field('educ_text'); ?><!--</p>-->
+<!--          <button><a href="--><?php //the_field('banner2_btn'); ?><!--">Подробнее</a></button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</section>-->
 
 <section class="nearby" style="background-color: #fff">
   <div class="nearby-wrap">

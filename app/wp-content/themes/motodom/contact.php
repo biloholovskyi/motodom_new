@@ -136,7 +136,7 @@ get_header();
         },
         {
           iconLayout: 'default#image',
-          iconImageHref: '../wp-content/themes/motodom/media/icon/pin.png',
+          iconImageHref: '../wp-content/themes/motodom/media/icon/newPin.png',
           iconImageSize: [83.14, 64],
           iconImageOffset: [0, 0]
         });

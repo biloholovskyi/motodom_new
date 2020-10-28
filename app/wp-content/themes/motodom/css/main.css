@@ -268,7 +268,7 @@ img {
 }
 
 .footer ul li a:hover {
-  color: #0ff
+  color: #6FD44A
 }
 
 .form {
@@ -344,7 +344,7 @@ img {
 }
 
 .form form .input-wrapper--input {
-  border-bottom: 2px solid #00e1ff
+  border-bottom: 2px solid #61BA41
 }
 
 .form form .input-wrapper--input::after {
@@ -352,7 +352,7 @@ img {
   line-height: 18px;
   letter-spacing: .04em;
   text-transform: uppercase;
-  color: #00e1ff
+  color: #fff
 }
 
 .form form .input-wrapper input {
@@ -374,7 +374,7 @@ img {
   letter-spacing: .04em;
   text-transform: uppercase;
   color: #fff;
-  background: #3BFF00;
+  background: #61BA41;
   border: none;
   display: block;
   margin: 40px 0 0;
@@ -382,11 +382,12 @@ img {
   transition: .3s;
   border-radius: 100px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .form form .submit:hover {
   color: #fff;
-  background: #0ff;
+  background: #6FD44A;
 }
 
 .modal-form {
@@ -483,7 +484,7 @@ img {
 }
 
 .nav-modal__catalog ul li a:hover {
-  color: #0ff
+  color: #6FD44A;
 }
 
 .nav-modal__menu {
@@ -512,7 +513,7 @@ img {
 }
 
 .nav-modal__menu ul li a:hover {
-  color: #0ff
+  color: #6FD44A;
 }
 
 .alert-modal {
@@ -656,9 +657,9 @@ img {
 }
 
 .page-catalog--inner .page-catalog__category .list .item--active {
-  color: #66c;
+  color: #61BA41;
   position: relative;
-  border-bottom: 3px solid #66c
+  border-bottom: 3px solid #61BA41
 }
 
 .page-catalog--inner .page-catalog__category .list .item--show {
@@ -685,7 +686,7 @@ img {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -.02em;
-  color: #66c;
+  color: #61BA41;
   display: block;
   width: 100%;
   text-align: center
@@ -699,7 +700,7 @@ img {
 
 .page-catalog--page .page-catalog__item:hover {
   cursor: pointer;
-  background-color: #66c;
+  background-color: #61BA41;
   background-image: url(../media/icon/pattern.svg);
   background-position: center
 }
@@ -753,7 +754,7 @@ img {
 .page-catalog--last__btn-wrapper .page-catalog--last__price {
   font-size: 24px;
   line-height: 30px;
-  color: #66c;
+  color: #61BA41;
   margin-left: 24px
 }
 
@@ -763,7 +764,7 @@ img {
   letter-spacing: .04em;
   text-transform: uppercase;
   color: #fff;
-  background: #3BFF00;
+  background: #61BA41;
   padding: 20px 32px 14px;
   display: inline-block;
   white-space: nowrap
@@ -930,7 +931,7 @@ img {
 }
 
 .contact-page__list .item--active .name {
-  color: #00e1ff
+  color: #61BA41
 }
 
 .contact-page__map {
@@ -2234,7 +2235,7 @@ img {
 
 .showForm:hover {
   color: #ffffff !important;
-  background: #00E1FF !important;
+  background: #6FD44A !important;
 }
 
 /*fix*/
