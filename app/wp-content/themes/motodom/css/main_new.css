@@ -1036,11 +1036,14 @@ label {
   margin-bottom: 32px
 }
 
-.main-desc__text {
+ .main-desc__text > p {
   font-size: 16px;
   line-height: 28px;
   color: rgba(34, 34, 34, .8)
 }
+
+
+
 
 .page-catalog--last__title-more {
   margin-bottom: 24px;
