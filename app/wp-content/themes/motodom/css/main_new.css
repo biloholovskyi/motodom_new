@@ -1042,6 +1042,15 @@ label {
   color: rgba(34, 34, 34, .8)
 }
 
+.main-desc__text * {
+  color: rgba(34, 34, 34, .8)
+}
+
+.main-desc__text * img {
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+}
 
 
 
