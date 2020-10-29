@@ -282,16 +282,14 @@ img {
 
 .form__title {
   font-weight: 700;
-  font-size: 54px;
   line-height: 80px;
-  font-family: HeliosCond;
   text-align: left;
   letter-spacing: -.02em;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 64px;
-  font-family: 'Montserrat';
-  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
 }
 
 .form .form-text {
@@ -549,16 +547,14 @@ img {
 }
 
 .page-catalog__title {
-  font-family: HeliosCond;
   font-weight: 700;
-  font-size: 80px;
   line-height: 100px;
   letter-spacing: -.02em;
   text-transform: uppercase;
   color: #111;
   margin-bottom: 32px;
-  font-family: 'Montserrat';
-  font-size: 45px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
 }
 
 .page-catalog__item {

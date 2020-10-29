@@ -236,11 +236,11 @@ position: absolute;
 }
 
 .school-page-title h1 {
-  font-family: HeliosCond;
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
-  line-height: 100px;
+  font-size: 60px;
+  line-height: 80px;
   letter-spacing: .08em;
   text-transform: uppercase;
   margin: 0 0 36px
@@ -278,11 +278,11 @@ position: absolute;
 }
 
 .school-page-content .school-text h2 {
-  font-family: HeliosCond;
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 90px;
+  font-size: 60px;
+  line-height: 80px;
   text-transform: uppercase;
   margin-bottom: 36px;
   letter-spacing: 0.03em;
@@ -308,7 +308,7 @@ position: absolute;
 }
 
 .school-about .school-about-title h2 {
-  font-family: HeliosCond;
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
